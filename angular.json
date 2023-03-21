@@ -5,7 +5,11 @@
   "projects": {
     "Angular-Cart": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -25,7 +29,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -66,6 +70,7 @@
               "browserTarget": "Angular-Cart:build:development"
             }
           },
+          "proxyConfig": "proxy.conf.json",
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
@@ -87,12 +92,15 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "1a25c38a-265d-4b05-a4b2-62c915548646"
   }
 }

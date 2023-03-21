@@ -1,0 +1,45 @@
+<p>donut-list works!</p>
+<div>
+<!--  <ng-container *ngIf="donuts.length;then card else nothing">-->
+
+<!--  </ng-container>-->
+<!--  <ng-template #card>-->
+<!--    <app-donut-card [donut]="donuts[0]"></app-donut-card>-->
+<!--    <app-donut-card [donut]="donuts[1]"></app-donut-card>-->
+<!--    <app-donut-card [donut]="donuts[2]"></app-donut-card>-->
+<!--  </ng-template>-->
+
+<!--  <ng-template #nothing>-->
+<!--    <p>Nothing here......</p>-->
+<!--  </ng-template>-->
+
+<!--  <ng-template [ngIf]="donuts.length";  [ngIfElse]="nothing">-->
+<!--    <app-donut-card [donut]="donuts[0]"></app-donut-card>-->
+<!--    <app-donut-card [donut]="donuts[1]"></app-donut-card>-->
+<!--    <app-donut-card [donut]="donuts[2]"></app-donut-card>-->
+<!--  </ng-template>-->
+
+<!--  <ng-template #nothing>-->
+<!--    <p>Nothing here......</p>-->
+<!--  </ng-template>-->
+  <div class="btn-new">
+    <a class="btn" routerLink="new">
+      New Donut
+    </a>
+  </div>
+
+  <ng-container *ngIf="donuts?.length;else nothing">
+    <div *ngFor="let donut of donuts; trackBy: trackByFn">
+      <app-donut-card [donut]="donut"></app-donut-card>
+    </div>
+  </ng-container>
+
+  <ng-template #nothing>
+    <p>Nothing here......</p>
+  </ng-template>
+
+
+
+
+</div>
+

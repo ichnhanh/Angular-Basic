@@ -1,23 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+
+
 label {
   display: block;
   margin-bottom: 10px;
-}
-label span {
-  display: block;
-  margin-bottom: 5px;
+  span {
+    display: block;
+    margin-bottom: 5px;
+  }
 }
 
 .input {
+  //outline: 0;
   padding: 10px 15px;
   border: 2px solid transparent;
   border-radius: 5px;
   font-size: 14px;
   width: 100%;
   background-color: #f7f7f7;
-}
-.input:focus {
-  border-color: #e3e3e3;
+  &:focus {
+    border-color: #e3e3e3;
+  }
 }
 
 form .ng-invalid.ng-touched {
@@ -29,9 +32,8 @@ form .ng-invalid.ng-touched {
   padding: 10px 10px;
   background-color: aqua;
   color: #444444;
-}
-.btn-new {
-  margin-bottom: 20px;
-}
+  &-new {
+    margin-bottom: 20px;
+  }
 
-/*# sourceMappingURL=styles.css.map */
+}

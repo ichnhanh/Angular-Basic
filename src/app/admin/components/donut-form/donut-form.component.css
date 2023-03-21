@@ -1,0 +1,15 @@
+.donut-form-radios {
+  display: flex;
+  align-content: center;
+}
+.donut-form-radios label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+.donut-form-radios label span {
+  color: #444;
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=donut-form.component.css.map */
